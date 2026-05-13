@@ -1,49 +1,39 @@
-theme: just-the-docs
-title: IoT Study Notes
-description: MDM-4 Industrial IoT — Question Banks, Notes & Answers
-baseurl: "/iot-sa"
-url: "https://hashclash62.github.io"
+title: IoT Notes — TY Engineering, PCCOE
+description: MDM-4 Industrial IoT — Study Notes by Unit
+theme: minima
 
-# Navigation
-nav_sort: case_insensitive
-
-# Search
-search_enabled: true
-search:
-  heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
-  tokenizer_separator: /[\s\-/]+/
-
-# Footer
-footer_content: "MDM-4 IoT Study Notes"
-
-# Colour scheme
-color_scheme: dark
-
-# Callouts
-callouts_level: quiet
-callouts:
-  highlight:
-    color: yellow
-  important:
-    title: Important
-    color: blue
-  new:
-    title: New
-    color: green
-  note:
-    title: Note
-    color: purple
-  warning:
-    title: Warning
-    color: red
-
-# Back to top
-back_to_top: true
-back_to_top_text: "Back to top"
-
-# Plugins
 plugins:
-  - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+relative_links:
+  enabled: true
+  collections: true
+
+optional_front_matter:
+  enabled: true
+
+readme_index:
+  enabled: true
+
+titles_from_headings:
+  enabled: true
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - agent-skill-generate-notes.md
+  - unit1-questions.md
+  - unit2-questions.md
+  - unit3-questions.md
+  - unit4-questions.md
+  - Gemfile
+  - Gemfile.lock
