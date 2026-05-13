@@ -37,3 +37,6 @@ exclude:
   - unit4-questions.md
   - Gemfile
   - Gemfile.lock
+
+header_pages:
+  - index.md
